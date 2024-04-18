@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('./css/banner.css');
+@import url('./css/categoria.css');
+@import url('./css/destaques.css');
+
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    font-size: 1em;
+    font-weight: 500;
+    --fonte-principal: "Quicksand", sans-serif;
+    --cor-chocolate: #450920;
+    --cor-rosa: #A53860;
+    --cor-blush: #DA627D;
+    --cor-salmon: #FFA5AB;
+    --cor-de-fundo: #F9DBBD;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-chocolate);
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: var(--cor-de-fundo);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;  
+    background-color: var(--cor-chocolate);
+}
+
+.cabecalho_barra-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor-de-fundo);
+    padding: 1em;
+    margin: 0 1em;
+}
+
+.telefone {
+    display: block;
+}
+
+.logo {
+    width: 150px;
+}
+
+.cabecalho_menu-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-chocolate);
+    padding: 0.75em;
+}
+
+.cabecalho_menu-lista, ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow:hidden;
+    position: relative;
+}
+
+.banner-site {
+    width: 100%;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-chocolate);
+}
+
+.rodape_secoes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4em 2em;
+}
+
+.rodape_titulo {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.rodape_endereco {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+    display: block;
+}
+
+.rodape_informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+}
+
+.rodape_links {
+    color: var(--cor-de-fundo);
+    text-decoration: none;
+}
+
+.rodape_ofertas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 30px;
+}
+
+.redes-sociais_icones {
+    font-size: 2em;
+    color: var(--cor-de-fundo);
+}
+
+.rodape_assinatura {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--cor-rosa);
+}
+
+.rodape_ofertas .redes_sociais .fa-brands {
+    color: white;
+}
+
+@media (max-width: 1023px) {
+    * {
+        font-size: 14px;
+    }
+
+    .barra_de_busca {
+        display: none;
+    }
+
+    .rodape_titulo {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+
+    .rodape_secoes {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .rodape_endereco {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 479px) {
+    .telefone,
+    .barra_de_busca {
+        display: none;
+    }
+
+    .rodape_secoes {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+}

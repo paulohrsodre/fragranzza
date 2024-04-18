@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/923e60692f.js" crossorigin="anonymous"></script>
+    <script src="./js/categoria.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="cabecalho_barra-topo">
+            <p class="telefone">Contate-nos: (99)99999-9999</p>
+            <img src="./assets/fragranza (12).png" class="logo">
+            <input type="search" class="barra_de_busca">
+        </div>
+
+        <nav class="cabecalho_menu">
+            <ul class="cabecalho_menu-lista">
+                <li>Início</li>
+                <li>Catálogo</li>
+                <li>Sobre Nós</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="container_banner">
+            <div class="carrossel_banner">
+                <div class="slide_banner">
+                    <img src="./assets/banner-site (1).png" alt=" banner com produtos" class="banner-site">
+                </div>
+                <div class="slide_banner">
+                    <img src="./assets/banner-site (2).png" alt=" banner com produtos" class="banner-site">
+                </div>
+                <div class="slide_banner">
+                    <img src="./assets/banner-site.png" alt=" banner com produtos" class="banner-site">
+                </div>
+                <!-- Adicione mais slides aqui -->
+            </div>
+            <button class="botao-banner botao-anterior material-symbols-rounded">
+                chevron_left
+            </button>
+            <button class="botao-banner botao-proximo material-symbols-rounded">
+                chevron_right
+            </button>
+        </section>
+
+        <section class="container_categorias">
+            <h2 class="container_categorias-titulo">Categorias</h2>
+            <div class="carrossel_categorias">
+
+                <button id="slide-aterior" class="botao-slide material-symbols-rounded">chevron_left</button>
+
+                <div class="categorias">
+                    <div class="categoria-item">
+                        <a href="#"><img src="images/creme_corporal (2).jpg"
+                                alt="Imagem promocional de creme corporal"></a>
+                        <p>Corporal</p>
+                    </div>
+                    <div class="categoria-item">
+                        <a href="#"><img src="images/perfume (1).jpg" alt="Imagem promocional de perfume"></a>
+                        <p>Perfume</p>
+                    </div>
+                    <div class="categoria-item">
+                        <a href="#"><img src="images/make (9).jpg" alt="Imagem promocional de maquiagens"></a>
+                        <p>Maquiagens</p>
+                    </div>
+                    <div class="categoria-item">
+                        <a href="#"><img src="images/batom (5).jpg" alt="imagem promocional de batom"></a>
+                        <p>Lábios</p>
+                    </div>
+                    <div class="categoria-item">
+                        <a href="#"><img src="images/cabelo (3).jpg" alt="Imagem promocional de shampoo"></a>
+                        <p>Capilar</p>
+                    </div>
+                    <div class="categoria-item">
+                        <a href="#"><img src="images/creme_facial (2).jpg" alt="Imagem promocional de creme facial"></a>
+                        <p>Facial</p>
+                    </div>
+                </div>
+
+                <button id="slide-proximo" class="botao-slide material-symbols-rounded">chevron_right</button>
+
+                <div class="categoria_barra-slide">
+                    <div class="barra-slide_track">
+                        <div class="barra-slide_cursor"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container_destaques">
+            <h2 class="container_destaques-titulo">Destaques</h2>
+            <div class="destques">
+                <div class="destques_item">
+                    <div class="destques-icone">
+                        <span class="destques-favorito">
+                            <a href="" ><span class="material-symbols-rounded">favorite</span></a>
+                        </span>
+                        <span class="destques-carrinho">
+                            <a href="" ><span class="material-symbols-rounded">Shopping_cart</span></a>
+                        </span>
+                    </div>
+                    <img src="./images/batom (3).jpg" alt="imagem de batom" class="destques_item-imagem">
+                    <div class="destques_item-texto">
+                        <p>Batom</p>
+                        <p>Matte Lipstick Blue Glamour - Batom 3g</p>
+                    </div>
+                    <div class="destques_item-valor">
+                        <p>R$ 45,50</p>
+                        <p>3x de 15,20</p>
+                    </div>
+                    <div class="destques_item-descricao">
+                        <p>Batom com acabamento matte. Define, colore e destaca os lábios. Cores variadas e intensas.</p>
+                    </div>
+                </div>
+
+                <div class="destques_item">
+                    <div class="destques-icone">
+                        <span class="destques-favorito">
+                            <a href="" ><span class="material-symbols-rounded">favorite</span></a>
+                        </span>
+                        <span class="destques-carrinho">
+                            <a href="" ><span class="material-symbols-rounded">Shopping_cart</span></a>
+                        </span>
+                    </div>
+                    <img src="./images/batom (5).jpg" alt="imagem de batom" class="destques_item-imagem">
+                    <div class="destques_item-texto">
+                        <p>Batom</p>
+                        <p>Matte Lipstick Pink Dream Princess - Batom 3g</p>
+                    </div>
+                    <div class="destques_item-valor">
+                        <p>R$ 55,90</p>
+                        <p>3x de 18,70</p>
+                    </div>
+                    <div class="destques_item-descricao">
+                        <p>Batom com acabamento matte. Define, colore e destaca os lábios. Cores variadas e intensas.</p>
+                    </div>
+                </div>
+
+                <div class="destques_item">
+                    <div class="destques-icone">
+                        <span class="destques-favorito">
+                            <a href="" ><span class="material-symbols-rounded">favorite</span></a>
+                        </span>
+                        <span class="destques-carrinho">
+                            <a href="" ><span class="material-symbols-rounded">Shopping_cart</span></a>
+                        </span>
+                    </div>
+                    <img src="./images/creme_corporal (2).jpg" alt="imagem de batom" class="destques_item-imagem">
+                    <div class="destques_item-texto">
+                        <p>Kit Body Care Home</p>
+                        <p>Cuidados Corporais Fragranzza Home</p>
+                    </div>
+                    <div class="destques_item-valor">
+                        <p>R$ 159,89</p>
+                        <p>10x de 15,90</p>
+                    </div>
+                    <div class="destques_item-descricao">
+                        <p>Os melhores para a sua pele. Inclui um desodrante em creme, creme corporal perfumado e creme facial de secagem rápida.</p>
+                    </div>
+                </div>
+
+                <div class="destques_item">
+                    <div class="destques-icone">
+                        <span class="destques-favorito">
+                            <a href="" ><span class="material-symbols-rounded">favorite</span></a>
+                        </span>
+                        <span class="destques-carrinho">
+                            <a href="" ><span class="material-symbols-rounded">Shopping_cart</span></a>
+                        </span>
+                    </div>
+                    <img src="./images/creme_corporal (4).jpg" alt="imagem de batom" class="destques_item-imagem">
+                    <div class="destques_item-texto">
+                        <p>Fragranzza Wash</p>
+                        <p>Loção para banho, a base de flores e sais minerais.</p>
+                    </div>
+                    <div class="destques_item-valor">
+                        <p>R$ 80,00</p>
+                        <p>5x de 16,09</p>
+                    </div>
+                    <div class="destques_item-descricao">
+                        <p>Para deixar seu banho ainda mais relaxante e seu corpo muito perfumado no dia-a-dia.</p>
+                    </div>
+                </div>
+
+                <div class="destques_item">
+                    <div class="destques-icone">
+                        <span class="destques-favorito">
+                            <a href="" ><span class="material-symbols-rounded">favorite</span></a>
+                        </span>
+                        <span class="destques-carrinho">
+                            <a href="" ><span class="material-symbols-rounded">Shopping_cart</span></a>
+                        </span>
+                    </div>
+                    <img src="./images/perfume (4).jpg" alt="imagem de batom" class="destques_item-imagem">
+                    <div class="destques_item-texto">
+                        <p>Fragranzza Man</p>
+                        <p>Perfume amadeirado e levemente cítrico</p>
+                    </div>
+                    <div class="destques_item-valor">
+                        <p>R$ 180,90</p>
+                        <p>3x de 18,10</p>
+                    </div>
+                    <div class="destques_item-descricao">
+                        <p>Perfume masculino de aroma amadeirado e levemente cítrico com notas de tangerina. Longa duração na pele.</p>
+                    </div>
+                </div>
+
+                <div class="destques_item">
+                    <div class="destques-icone">
+                        <span class="destques-favorito">
+                            <a href="" ><span class="material-symbols-rounded">favorite</span></a>
+                        </span>
+                        <span class="destques-carrinho">
+                            <a href="" ><span class="material-symbols-rounded">Shopping_cart</span></a>
+                        </span>
+                    </div>
+                    <img src="./images/perfume (2).jpg" alt="imagem de batom" class="destques_item-imagem">
+                    <div class="destques_item-texto">
+                        <p>Fragranzza Woman</p>
+                        <p>Perfume doce, floral e levemente cítrico</p>
+                    </div>
+                    <div class="destques_item-valor">
+                        <p>R$ 180,90</p>
+                        <p>3x de 18,10</p>
+                    </div>
+                    <div class="destques_item-descricao">
+                        <p>Perfume feminino de aroma doce com uma combinação harmoniosa de aromas florais e levemente cítrico com notas de limão siciliano. Longa duração na pele.</p>
+                    </div>
+                </div>
+
+                <div class="destques_item">
+                    <div class="destques-icone">
+                        <span class="destques-favorito">
+                            <a href="" ><span class="material-symbols-rounded">favorite</span></a>
+                        </span>
+                        <span class="destques-carrinho">
+                            <a href="" ><span class="material-symbols-rounded">Shopping_cart</span></a>
+                        </span>
+                    </div>
+                    <img src="./images/make (6).jpg" alt="imagem de batom" class="destques_item-imagem">
+                    <div class="destques_item-texto">
+                        <p>Kit Pincéis Fragrranzza MakeUp</p>
+                        <p>Pincéis de alta qualidade e cerdas super macias</p>
+                    </div>
+                    <div class="destques_item-valor">
+                        <p>R$ 39,50</p>
+                        <p>3x de 13,20</p>
+                    </div>
+                    <div class="destques_item-descricao">
+                        <p>O kit contém pincéis de tamanhos variados para fazer a sua melhor make. Rímel e base mate Fragranzza MakeUp de brinde.</p>
+                    </div>
+                </div>
+
+                <div class="destques_item">
+                    <div class="destques-icone">
+                        <span class="destques-favorito">
+                            <a href="" ><span class="material-symbols-rounded">favorite</span></a>
+                        </span>
+                        <span class="destques-carrinho">
+                            <a href="" ><span class="material-symbols-rounded">Shopping_cart</span></a>
+                        </span>
+                    </div>
+                    <img src="./images/make (2).jpg" alt="imagem de batom" class="destques_item-imagem">
+                    <div class="destques_item-texto">
+                        <p>Fragranzza Compact</p>
+                        <p>Pó compacto de tonalidades variadas - 10g</p>
+                    </div>
+                    <div class="destques_item-valor">
+                        <p>R$ 21,90</p>
+                        <p>3x de 7,30</p>
+                    </div>
+                    <div class="destques_item-descricao">
+                        <p>Pó compacto de alta qualidade, diversos tons para melhor adequar a sua pele. Brinde uma base mate Fragranzza MakeUp.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape_secoes">
+            <div class="rodape_endereco">
+                <img src="./assets/fragranza (12).png" class="logo rodape_titulo">
+                <p>Av Antonio Simões, 55, Centro - São Luís/MA</p>
+                <p>contato@fragranza.com</p>
+            </div>
+
+            <div class="rodape_informacoes">
+                <h3 class="rodape_titulo">Informações</h3>
+                <a href="http://" class="rodape_links">Sobre Nós</a>
+                <a href="http://" class="rodape_links">Política de Privacidade</a>
+                <a href="http://" class="rodape_links">Termos e Condições</a>
+                <a href="http://" class="rodape_links">Minha Conta</a>
+            </div>
+
+            <div class="rodape_ofertas">
+                <h3 class="rodape_titulo">Ofertas</h3>
+                <p>Assine nossa newsletter para receber ofertas especiais</p>
+                <input type="text">
+                <div class="redes-sociais">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook redes-sociais_icones"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube redes-sociais_icones"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in redes-sociais_icones "></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter redes-sociais_icones"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="rodape_assinatura">
+            <p>Desenvolvido por Paulo Sodré - Loja de Cosmétiicos © 2024</p>
+        </div>
+    </footer>
+
+    <script src="./js/banner.js"></script>
+    <script src="./js/footer.js"></script>
+</body>
+
+</html>
