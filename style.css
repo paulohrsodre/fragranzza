@@ -12,10 +12,16 @@
     font-size: 1em;
     font-weight: 500;
     --fonte-principal: "Quicksand", sans-serif;
-    --cor-chocolate: #450920;
+    --cor-chocolate: #450A0A;
     --cor-rosa: #A53860;
-    --cor-blush: #DA627D;
-    --cor-salmon: #FFA5AB;
+    --cor-blush: #F43F5E;
+    --cor-fav: #F87171;
+    --cor-fav-hover: #EF4444;
+    --cor-fav-marcado: #DC2626;
+    --cor-salmon: #FCA5A5;
+    --cor-cart: #60A5FA;
+    --cor-cart-hover: #3B82F6;
+    --cor-cart-marcado: #2563EB;
     --cor-de-fundo: #F9DBBD;
 }
 

@@ -30,6 +30,10 @@
     color: #333;
 }
 
+.botao-banner:hover {
+    background: var(--cor-blush);
+}
+
 .botao-anterior {
     left: 10px;
     color: var(--cor-chocolate);

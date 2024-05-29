@@ -32,7 +32,7 @@
 }
 
 .carrossel_categorias .botao-slide:hover {
-    background: #444;
+    background: var(--cor-blush);
 }
 
 .carrossel_categorias .botao-slide#slide-aterior {
