@@ -12,22 +12,21 @@
     font-size: 1em;
     font-weight: 500;
     --fonte-principal: "Quicksand", sans-serif;
-    --cor-chocolate: #450A0A;
+    --cor-rubro: #450A0A;
     --cor-rosa: #A53860;
-    --cor-blush: #F43F5E;
+    --cor-hover: #F43F5E;
     --cor-fav: #F87171;
     --cor-fav-hover: #EF4444;
     --cor-fav-marcado: #DC2626;
     --cor-salmon: #FCA5A5;
-    --cor-cart: #60A5FA;
-    --cor-cart-hover: #3B82F6;
-    --cor-cart-marcado: #2563EB;
+    --cor-cart: #3B82F6;
+    --cor-cart-hover: #2563EB;
     --cor-de-fundo: #F9DBBD;
 }
 
 body {
     font-family: var(--fonte-principal);
-    color: var(--cor-chocolate);
+    color: var(--cor-rubro);
     min-height: 100vh;
     min-width: 100%;
     background-color: var(--cor-de-fundo);
@@ -36,7 +35,7 @@ body {
 .cabecalho {
     display: flex;
     flex-direction: column;  
-    background-color: var(--cor-chocolate);
+    background-color: var(--cor-rubro);
 }
 
 .cabecalho_barra-topo {
@@ -61,12 +60,17 @@ body {
     align-items: center;
     justify-content: space-evenly;
     color: var(--cor-de-fundo);
-    background-color: var(--cor-chocolate);
+    background-color: var(--cor-rubro);
     padding: 0.75em;
+    cursor: pointer;
 }
 
 .cabecalho_menu-lista, ul {
     list-style-type: none;
+}
+
+.menu_lista-item:hover {
+    color: var(--cor-hover);
 }
 
 .container {
@@ -88,7 +92,7 @@ body {
     bottom: 0;
     width: 100%;
     color: var(--cor-de-fundo);
-    background-color: var(--cor-chocolate);
+    background-color: var(--cor-rubro);
 }
 
 .rodape_secoes {
@@ -121,6 +125,10 @@ body {
 .rodape_links {
     color: var(--cor-de-fundo);
     text-decoration: none;
+}
+
+.rodape_links:hover {
+    color: var(--cor-hover);
 }
 
 .rodape_ofertas {

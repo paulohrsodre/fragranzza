@@ -78,14 +78,6 @@
     display: none;
 }
 
-.carrinho-desmarcado {
-    display: block;
-}
-
-.carrinho-marcado {
-    display: none;
-}
-
 .destaques_item-imagem {
     width: 100%;
     padding: 0 20px;

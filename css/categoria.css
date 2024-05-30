@@ -32,7 +32,7 @@
 }
 
 .carrossel_categorias .botao-slide:hover {
-    background: var(--cor-blush);
+    background: var(--cor-hover);
 }
 
 .carrossel_categorias .botao-slide#slide-aterior {
@@ -85,7 +85,7 @@
     position: absolute;
     height: 100%;
     width: 50%;
-    background: var(--cor-chocolate);
+    background: var(--cor-rubro);
     border-radius: inherit;
     cursor: grab;
 }

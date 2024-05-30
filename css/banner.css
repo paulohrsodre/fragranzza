@@ -31,17 +31,17 @@
 }
 
 .botao-banner:hover {
-    background: var(--cor-blush);
+    background: var(--cor-hover);
 }
 
 .botao-anterior {
     left: 10px;
-    color: var(--cor-chocolate);
+    color: var(--cor-rubro);
     background-color: var(--cor-salmon);
 }
 
 .botao-proximo {
     right: 10px;
-    color: var(--cor-chocolate);
+    color: var(--cor-rubro);
     background-color: var(--cor-salmon);
 }
