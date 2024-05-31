@@ -17,19 +17,47 @@
 
     <header class="cabecalho">
         <div class="cabecalho_barra-topo">
-            <p class="telefone">Contate-nos: (99)99999-9999</p>
+            <div class="telefone"><img src="./icons/phone-icon.svg" alt="Ícone de telefone"><p>(99) 99999-9999</p></div>         
             <img src="./assets/fragranza (12).png" class="logo">
-            <input type="search" class="barra_de_busca">
+            <ul class="utilitarios">
+                <li class="utilitarios-item">
+                    <img src="./icons/support-icon.svg" alt="Ícone de suporte/atendimento">
+                </li>
+                <li class="utilitarios-item">
+                    <img src="./icons/account_circle-icon.svg" alt="Ícone de suporte/atendimento">
+                </li>
+                <li class="utilitarios-item">
+                    <img src="./icons/bag-icon.svg" alt="Ícone de suporte/atendimento">
+                </li>
+            </ul>
+            
+            <div class="menu_mobile-icon">
+                <button class="menu-icon"><img src="/icons/menu-icon.svg" alt="Ícone de menu mobile" class="icon"></button>
+            </div>
         </div>
 
         <nav class="cabecalho_menu">
             <ul class="cabecalho_menu-lista">
-                <li class="menu_lista-item">Início</li>
-                <li class="menu_lista-item">Catálogo</li>
-                <li class="menu_lista-item">Sobre Nós</li>
-                <li class="menu_lista-item">Contato</li>
+                <li class="menu_lista-item"><a href="http://">Início</a></li>
+                <li class="menu_lista-item"><a href="http://">Catálogo</a></li>
+                <li class="menu_lista-item"><a href="http://">Sobre Nós</a></li>
+                <li class="menu_lista-item"><a href="http://">Contato</a></li>
             </ul>
         </nav>
+
+        <div class="mobile">
+            <nav class="menu_mobile">
+                <ul class="menu_mobile-lista">
+                    <li class="menu_mobile-item"><a href="http://">Início</a></li>
+                    <li class="menu_mobile-item"><a href="http://">Catálogo</a></li>
+                    <li class="menu_mobile-item"><a href="http://">Sobre Nós</a></li>
+                    <li class="menu_mobile-item"><a href="http://">Contato</a></li>
+                    <li class="menu_mobile-item"><a href="http://">Compras</a></li>
+                    <li class="menu_mobile-item"><a href="http://">Minha Conta</a></li>
+                    <li class="menu_mobile-item"><a href="http://">SAC</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="container">
@@ -387,6 +415,7 @@
         </div>
     </footer>
 
+    <script src="./js/menu-mobile.js"></script>
     <script src="./js/botao-favorito.js"></script>
     <script src="./js/banner.js"></script>
     <script src="./js/footer.js"></script>

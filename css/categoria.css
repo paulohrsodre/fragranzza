@@ -106,6 +106,10 @@
 }
 
 @media (max-width: 1023px) {
+    .container_categorias-titulo {
+        font-size: 1.75em;
+    }
+
     .carrossel_categorias .botao-slide {
         display: none!important;
     }
@@ -126,6 +130,10 @@
 }
 
 @media (max-width: 480px) {
+    .container_categorias-titulo {
+        font-size: 1.5em;
+    }
+    
     .carrossel_categorias .categorias .categoria-item img {
         width: 200px;
         height: 250px;

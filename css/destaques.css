@@ -83,4 +83,16 @@
     padding: 0 20px;
 }
 
+@media (max-width: 736px) {
+    .container_destaques-titulo {
+        font-size: 1.75em;
+    }
+}
+
+@media (max-width: 479px) {
+    .container_destaques-titulo {
+        font-size: 1.5em;
+    }
+}
+
 

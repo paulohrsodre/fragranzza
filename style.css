@@ -7,7 +7,7 @@
 
 * {
     margin: 0;
-    padding: 0;  
+    padding: 0;
     box-sizing: border-box;
     font-size: 1em;
     font-weight: 500;
@@ -32,10 +32,13 @@ body {
     background-color: var(--cor-de-fundo);
 }
 
+/* ESTILO DO HEADER PRINCIPAL */
+
 .cabecalho {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-color: var(--cor-rubro);
+    position: relative;
 }
 
 .cabecalho_barra-topo {
@@ -47,43 +50,118 @@ body {
     margin: 0 1em;
 }
 
+.cabecalho_barra-topo .logo {
+    margin-right: 48px;
+}
+
 .telefone {
-    display: block;
+    display: flex;
+    gap: 12px;
 }
 
 .logo {
     width: 150px;
 }
 
+/* ESTILO DO MENU MOBILE */
+
+.menu_mobile-icon {
+    display: none;
+}
+
+.menu_mobile {
+    display: none;
+    position: absolute;
+    /* Mantém o menu absoluto */
+    top: 60px;
+    /* Ajuste conforme necessário */
+    right: 0;
+    width: 200px;
+    /* Ajuste conforme necessário */
+    border: 1px solid;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu_mobile-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-rubro);
+}
+
+.menu_mobile-item {
+    border-bottom: 1px solid;
+}
+
+.menu_mobile-item a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+}
+
+.menu_mobile-item a:hover {
+    background-color: var(--cor-hover);
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ESTILO DO MENU DE NAVEGAÇÃO */
+
 .cabecalho_menu-lista {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: var(--cor-de-fundo);
     background-color: var(--cor-rubro);
-    padding: 0.75em;
-    cursor: pointer;
+    padding: 0.75rem;
 }
 
-.cabecalho_menu-lista, ul {
+.cabecalho_menu-lista,
+ul {
     list-style-type: none;
 }
 
-.menu_lista-item:hover {
+.utilitarios {
+    display: flex;
+    gap: 24px;
+}
+
+.utilitarios-item {
+    cursor: pointer;
+}
+
+.menu_lista-item a {
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    cursor: pointer;
+}
+
+.menu_lista-item:hover a {
     color: var(--cor-hover);
 }
+
+/* ESTILO DO CONTAINER PRINCIPAL */
 
 .container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
 }
+
+/* ESTILO DO BANNER */
 
 .banner-site {
     width: 100%;
 }
+
+/* ESTILO DO RODAPÉ */
 
 .rodape {
     display: flex;
@@ -183,7 +261,61 @@ body {
     }
 }
 
+@media (max-width: 736px) {
+    .utilitarios {
+        display: none;
+    }
+
+    .menu_mobile-icon {
+        display: block;
+    }
+
+    .menu_mobile {
+        position: absolute;
+        /* Garante que o menu mobile fique absoluto */
+        top: 60px;
+        /* Ajuste conforme necessário */
+        right: 0;
+        width: 300px;
+        /* Ajuste conforme necessário */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .menu_mobile-item {
+        padding: 20px;
+    }
+
+    .menu_mobile-item a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: var(--cor-de-fundo);
+    }
+
+    .menu_mobile-item a:hover {
+        background-color: var(--cor-hover);
+    }
+
+    .open {
+        display: block;
+    }
+
+    .cabecalho_menu {
+        display: none;
+    }
+}
+
 @media (max-width: 479px) {
+    .menu_mobile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_mobile-lista {
+        align-items: center;
+    }
+
     .telefone,
     .barra_de_busca {
         display: none;
