@@ -2,6 +2,8 @@
  
 Este projeto foi costruído por etapas durante o bootcamp Desenvolve Boticário em parceria com a Alura, a cada etapa do mesmo envolvendo as tecnologias HTML, CSS e Javascript. A página consiste em um projeto de loja de cosméticos fictícia onde apliquei o conhecimento adquirido durante o evento.
 
+Pode ser acessado em: https://fragranzza.vercel.app/
+
 ## Tecnologias utilizadas
 
 ![HTML5](https://a11ybadges.com/badge?logo=html5)\
